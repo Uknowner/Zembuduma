@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request A Quote | ZeMbuduma Construction</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/qoute.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header>
+  <div class="wrap">
+    <a href="#" class="logo">
+      <img src="./images/logo.webp" alt="ZeMbuduma Construction logo">
+
+      <div class="logo-text">
+        <span class="name">ZeMbuduma</span>
+        <span class="sub">Construction</span>
+      </div>
+    </a>
+    
+    <nav class="mainnav">
+      <a class="navlink" href="#about">About</a>
+      <a class="navlink" href="#services">Services</a>
+      <a class="navlink" href="#contact">Contact</a>
+      <a class="btn solid" href="./qoute.html">Get A Quote</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="quote-hero">
+      <div class="wrap">
+        <span class="eyebrow">Request A Quote</span>
+        <h1>
+          Let's build<br>
+          something exceptional.
+        </h1>
+        <p class="lead">
+          Whether you're planning a new development, renovation, roadworks, or
+          mining project, we'd love to hear about it. Complete the form below and
+          our team will respond within one business day.
+        </p>
+      </div>
+    </section>
+
+    <!-- Form & Info Section -->
+    <section class="quote-section">
+      <div class="wrap quote-grid">
+        
+        <form class="quote-form" novalidate>
+          <h2>Your Project</h2>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="full-name" required placeholder="e.g., John Doe">
+            </div>
+
+            <div class="field">
+              <label for="company">Company <span class="optional">(Optional)</span></label>
+              <input type="text" id="company" name="company">
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="name@example.co.za">
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required placeholder="e.g., +27 67 721 9214">
+            </div>
+
+            <div class="field">
+              <label for="service">Service Required</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="construction">Construction</option>
+                <option value="project-management">Project Management</option>
+                <option value="mining">Mining</option>
+                <option value="road-construction">Road Construction</option>
+                <option value="office-supplies">Office Supplies</option>
+                <option value="renovations">Renovations</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="location">Project Location</label>
+              <input type="text" id="location" name="location" required placeholder="e.g., Pretoria, Gauteng">
+            </div>
+          </div>
+
+          <div class="field full">
+            <label for="description">Project Description</label>
+            <textarea id="description" name="description" rows="8" required placeholder="Provide briefly details about your project scope, timeline, or requirements..."></textarea>
+          </div>
+
+          <button type="submit" class="btn solid">
+            Request Quote
+          </button>
+        </form>
+
+        <!-- Sidebar Info -->
+        <aside class="quote-info">
+          <div class="info-box">
+            <h3>Contact Details</h3>
+            <p><span aria-hidden="true">📞</span> <strong>Phone:</strong> <a href="tel:+27677219214">+27 (67) 721 9214</a></p>
+            <p><span aria-hidden="true">✉</span> <strong>Email:</strong> <a href="mailto:info@zembuduma.co.za">info@zembuduma.co.za</a></p>
+            <p><span aria-hidden="true">📍</span> <strong>Location:</strong> Pretoria, Gauteng</p>
+          </div>
+
+          <div class="info-box">
+            <h3>What Happens Next?</h3>
+            <ul>
+              <li>We review your enquiry layout and specs.</li>
+              <li>We contact you if more information is needed.</li>
+              <li>We prepare a detailed quotation.</li>
+              <li>We schedule a site visit if required.</li>
+            </ul>
+          </div>
+
+          <div class="info-box accent">
+            <h3>Why Choose Us?</h3>
+            <ul>
+              <li><strong>B-BBEE Level 1</strong> Contributor</li>
+              <li>Experienced Professional Team</li>
+              <li>Reliable Project Delivery</li>
+              <li>Strict Safety First Standards</li>
+              <li>Quality Workmanship Guaranteed</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+<!-- Footer lives in its own file (footer.html) and is loaded in here -->
+<div id="footer-slot"></div>
+
+<script src="./js/script.js"></script>
+
+<!-- Success Popup -->
+<div class="popup-overlay" id="success-popup">
+
+  <div class="popup">
+
+    <div class="popup-icon">✓</div>
+
+    <h2>Quote Request Ready</h2>
+
+    <p>
+      Your email has been prepared successfully.
+      Click <strong>Send</strong> in your email application to submit your quote request.
+    </p>
+
+    <button id="close-popup" class="btn solid">
+      Got it
+    </button>
+
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,348 @@
+/* ==========================================================================
+   Design Layout Containers
+   ========================================================================== */
+.wrap {
+  max-width: 1240px; /* Aligned with base.css */
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+
+/* ==========================================================================
+   Hero Section Styling
+   ========================================================================== */
+.quote-hero {
+  background-color: var(--charcoal); /* Matches project palette */
+  color: var(--paper);
+  padding: 6rem 0 5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.quote-hero h1 {
+  color: var(--paper); /* Ensures title is visible against dark background */
+  margin-bottom: 1.5rem;
+}
+
+.quote-hero .lead {
+  color: var(--concrete-dark);
+  max-width: 640px;
+}
+
+/* ==========================================================================
+   Main Section Layout Grid
+   ========================================================================== */
+.quote-section {
+  background-color: var(--paper);
+  padding: 5rem 0;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+@media (min-width: 992px) {
+  .quote-grid {
+    grid-template-columns: 1fr 380px; /* Clear split screen layout */
+  }
+}
+
+/* ==========================================================================
+   Interactive Quote Form
+   ========================================================================== */
+.quote-form {
+  background-color: var(--paper);
+  padding: 2.5rem;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 12px rgba(27, 26, 23, 0.03);
+}
+
+.quote-form h2 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--charcoal);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Fields & Custom Inputs Configuration */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--charcoal);
+}
+
+.field label .optional {
+  color: var(--text-muted);
+  font-weight: 400;
+  text-transform: none;
+}
+
+.field input,
+.field select,
+.field textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  background-color: var(--paper);
+  color: var(--charcoal);
+  transition: all 0.25s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--brass);
+  background-color: #ffffff; /* Clean pop effect on click interaction */
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+/* Input Placeholder Custom Layout styling */
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--concrete-dark);
+  opacity: 1;
+}
+
+/* Dropdown Arrow custom handling */
+.field select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2' stroke='%23a97d3f' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  background-size: 1.1rem;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+/* Submit Button Override */
+.quote-form .btn.solid {
+  width: 100%;
+  justify-content: center;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+/* ==========================================================================
+   Sidebar Information Panels
+   ========================================================================== */
+.quote-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-box {
+  background-color: var(--paper);
+  padding: 2.2rem;
+  border: 1px solid var(--line);
+}
+
+.info-box h3 {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 1.4rem;
+  color: var(--brass); /* Complements header types */
+}
+
+.info-box p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--charcoal);
+  margin-bottom: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.info-box p a {
+  color: var(--charcoal);
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.info-box p a:hover {
+  color: var(--brass);
+  text-decoration: underline;
+}
+
+.info-box ul {
+  list-style: none; /* Uniform lists matching architectural styling patterns */
+  padding: 0;
+}
+
+.info-box ul li {
+  position: relative;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+  line-height: 1.6;
+  padding-left: 1.2rem;
+}
+
+.info-box ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--brass);
+}
+
+/* Trust Indicators Highlight Block */
+.info-box.accent {
+  background-color: var(--charcoal);
+  border-color: var(--charcoal);
+}
+
+.info-box.accent h3 {
+  color: var(--concrete-dark);
+}
+
+.info-box.accent ul li {
+  color: var(--concrete-dark);
+}
+
+.info-box.accent ul li::before {
+  content: "✓";
+  color: var(--brass);
+}
+
+/* ===========================
+   Success Popup
+=========================== */
+
+.popup-overlay{
+
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.55);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:9999;
+
+}
+
+.popup-overlay.show{
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+.popup{
+
+    width:min(420px,90%);
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:2.5rem;
+
+    text-align:center;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+
+    transform:translateY(20px);
+
+    transition:.3s;
+
+}
+
+.popup-overlay.show .popup{
+
+    transform:translateY(0);
+
+}
+
+.popup-icon{
+
+    width:70px;
+    height:70px;
+
+    margin:0 auto 1rem;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:var(--brass);
+
+    color:#fff;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.popup h2{
+
+    margin-bottom:.75rem;
+
+}
+
+.popup p{
+
+    color:var(--text-muted);
+
+    margin-bottom:2rem;
+
+    line-height:1.7;
+
+}
+
+#close-popup{
+
+    width:100%;
+
+}

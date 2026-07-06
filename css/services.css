@@ -1,0 +1,60 @@
+.services{
+  background:var(--charcoal);
+  color:var(--paper);
+  padding:5rem 0;
+}
+
+.services .eyebrow{
+  color:var(--brass);
+}
+
+.services h2{
+  color:var(--paper);
+  max-width:640px;
+}
+
+.services-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1px;
+  margin-top:3rem;
+  background:rgba(244,241,233,0.14);
+}
+
+.service-card{
+  background:var(--charcoal);
+  padding:2.2rem 1.6rem;
+  transition:background 0.35s ease;
+}
+
+.service-card:hover{
+  background:var(--charcoal-soft);
+}
+
+.service-card .num{
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:0.9rem;
+  color:var(--brass);
+  margin-bottom:1.4rem;
+  display:block;
+}
+
+.service-card svg{
+  width:30px;
+  height:30px;
+  stroke:var(--concrete-dark);
+  margin-bottom:1.4rem;
+}
+
+.service-card h3{
+  color:var(--paper);
+  font-size:1.2rem;
+  margin-bottom:0.7rem;
+}
+
+.service-card p{
+  color:var(--concrete-dark);
+  font-size:0.92rem;
+  opacity:0.85;
+}

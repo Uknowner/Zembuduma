@@ -1,0 +1,285 @@
+/* ---------- Top Bar ---------- */
+
+.topbar{
+    background:var(--charcoal);
+    color:var(--concrete-dark);
+    font-size:.78rem;
+    letter-spacing:.02em;
+}
+
+.topbar .wrap{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:.5rem;
+    padding:.55rem 1.2rem;
+}
+
+.topbar .contacts{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+
+.topbar .contacts a{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    color:var(--concrete-dark);
+    text-decoration:none;
+    transition:color .25s ease;
+}
+
+.topbar .contacts a:hover{
+    color:var(--brass);
+}
+
+.topbar .contacts a:focus-visible{
+    outline:2px solid var(--brass);
+    outline-offset:3px;
+    border-radius:2px;
+}
+
+.topbar .contacts svg{
+    width:13px;
+    height:13px;
+    stroke:var(--brass);
+    flex-shrink:0;
+}
+
+.topbar .hours{
+    color:var(--concrete-dark);
+    opacity:.75;
+}
+
+/* ---------- Location dropdown ---------- */
+
+.contact-dropdown{
+    position:relative;
+}
+
+.contact-trigger{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    background:none;
+    border:none;
+    padding:0;
+    color:var(--concrete-dark);
+    font:inherit;
+    letter-spacing:inherit;
+    cursor:pointer;
+    transition:color .25s ease;
+}
+
+.contact-trigger:hover{
+    color:var(--brass);
+}
+
+.contact-trigger:focus-visible{
+    outline:2px solid var(--brass);
+    outline-offset:3px;
+    border-radius:2px;
+}
+
+.contact-trigger svg{
+    width:13px;
+    height:13px;
+    stroke:var(--brass);
+    flex-shrink:0;
+}
+
+.contact-menu{
+    display:none;
+    position:absolute;
+    top:calc(100% + .6rem);
+    left:0;
+    min-width:160px;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:.4rem;
+    z-index:200; /* was 20 — must exceed header's z-index:100 */
+}
+
+.contact-dropdown.open .contact-menu{
+    display:block;
+}
+
+.contact-menu a{
+    display:block;
+    padding:.5rem .7rem;
+    font-size:.78rem;
+    letter-spacing:normal;
+    color:var(--charcoal);
+    text-decoration:none;
+    border-radius:4px;
+    transition:background .2s ease;
+}
+
+.contact-menu a:hover{
+    background:rgba(0,0,0,.05);
+}
+
+.contact-menu a:focus-visible{
+    outline:2px solid var(--brass);
+    outline-offset:-2px;
+}
+
+/* ---------- Header ---------- */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(244,241,233,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+}
+
+header .wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 1.2rem;
+}
+
+
+/* ---------- Logo ---------- */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:.8rem;
+    text-decoration:none;
+}
+
+.logo img{
+    object-fit:contain;
+    display:block;
+    flex-shrink:0;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    line-height:1;
+}
+
+.logo .name{
+    font-family:var(--font-display);
+    font-size:1.35rem;
+    letter-spacing:.03em;
+    color:var(--charcoal);
+}
+
+.logo .sub{
+    margin-top:.2rem;
+    font-family:var(--font-body);
+    font-size:.58rem;
+    font-weight:700;
+    letter-spacing:.32em;
+    text-transform:uppercase;
+    color:var(--brass);
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav.mainnav{
+    display:none;
+    align-items:center;
+    gap:2.2rem;
+}
+
+nav.mainnav a.navlink{
+    position:relative;
+    padding-bottom:4px;
+    text-decoration:none;
+    color:var(--charcoal);
+    font-size:.85rem;
+    font-weight:500;
+    letter-spacing:.03em;
+}
+
+nav.mainnav a.navlink::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:1px;
+    background:var(--brass);
+    transition:width .3s ease;
+}
+
+nav.mainnav a.navlink:hover::after{
+    width:100%;
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (min-width:768px){
+
+    .topbar .wrap{
+        flex-direction:row;
+        align-items:center;
+        padding:.55rem 6%;
+    }
+
+    header .wrap{
+        padding:1rem 6%;
+    }
+
+    .logo{
+        gap:1rem;
+    }
+
+    .logo img{
+        width:70px;
+        height:70px;
+    }
+
+    .logo .name{
+        font-size:1.5rem;
+    }
+
+    .logo .sub{
+        font-size:.62rem;
+    }
+
+}
+
+
+/* ---------- Laptop/Desktop ---------- */
+
+@media (min-width:1024px){
+
+    header .wrap{
+        padding:1.15rem 6%;
+    }
+
+    .logo img{
+        width:82px;
+        height:82px;
+    }
+
+    .logo .name{
+        font-size:1.7rem;
+    }
+
+    .logo .sub{
+        font-size:.65rem;
+    }
+
+    nav.mainnav{
+        display:flex;
+    }
+
+}

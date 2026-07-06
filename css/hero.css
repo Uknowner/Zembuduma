@@ -1,0 +1,70 @@
+.hero{
+  position:relative;
+  min-height:auto;
+  display:flex;
+  align-items:center;
+  background:
+    linear-gradient(180deg, rgba(244,241,233,0.2), var(--paper) 85%),
+    repeating-linear-gradient(0deg, transparent 0 39px, rgba(27,26,23,0.05) 39px 40px),
+    repeating-linear-gradient(90deg, transparent 0 39px, rgba(27,26,23,0.05) 39px 40px),
+    var(--paper);
+  overflow:hidden;
+}
+
+.hero .wrap{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:2rem;
+  align-items:center;
+  padding-top:3.5rem;
+  padding-bottom:3.5rem;
+}
+
+.hero h1{
+  margin-bottom:1.2rem;
+}
+
+.hero h1 em{
+  font-style:italic;
+  color:var(--brass);
+}
+
+.hero-cta-row{
+  display:flex;
+  gap:1rem;
+  margin-top:2rem;
+  flex-wrap:wrap;
+}
+
+.sheet-tag{
+  margin-top:2.4rem;
+  display:inline-flex;
+  align-items:center;
+  gap:0.9rem;
+  font-size:0.72rem;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--text-muted);
+  font-weight:600;
+  border-top:1px solid var(--line);
+  padding-top:1rem;
+}
+
+.sheet-tag b{
+  color:var(--brass);
+  font-family:var(--font-display);
+  font-style:italic;
+  font-weight:500;
+}
+
+.hero-art{
+  display:none;
+  position:relative;
+}
+
+.hero-art svg{
+  width:100%;
+  height:auto;
+}

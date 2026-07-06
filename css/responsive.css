@@ -1,0 +1,158 @@
+/* Tablet and up */
+@media (min-width:768px){
+
+  .wrap{
+    padding:0 3rem;
+  }
+
+  .topbar .wrap{
+    flex-direction:row;
+    align-items:center;
+  }
+
+  .topbar .contacts{
+    gap:1.4rem;
+  }
+
+  .hero .wrap{
+    gap:3rem;
+    padding-top:5rem;
+    padding-bottom:5rem;
+  }
+
+  .feature-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .feature-card{
+    border-top:none;
+    border-left:1px solid var(--line);
+    padding:2rem 1.8rem;
+  }
+
+  .feature-card:first-child,
+  .feature-card:nth-child(odd){
+    border-left:none;
+  }
+
+  .about{
+    padding:7rem 0;
+  }
+
+  .about .wrap{
+    grid-template-columns:0.95fr 1.05fr;
+    gap:4rem;
+  }
+
+  .badges{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .services{
+    padding:7rem 0;
+  }
+
+  .services-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .cta-banner .wrap{
+    flex-direction:row;
+    align-items:center;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+    gap:3rem;
+  }
+
+  .footer-bottom{
+    flex-direction:row;
+    text-align:left;
+    justify-content:space-between;
+  }
+}
+
+/* Laptop and up */
+@media (min-width:1024px){
+
+  .wrap{
+    padding:0 6%;
+  }
+
+  header .wrap{
+    padding:1.15rem 6%;
+  }
+
+  nav.mainnav{
+    display:flex;
+  }
+
+  .hero{
+    min-height:92vh;
+  }
+
+  .hero .wrap{
+    grid-template-columns:1.1fr 0.9fr;
+    padding-top:5rem;
+    padding-bottom:5rem;
+  }
+
+  .hero-art{
+    display:block;
+  }
+
+  .feature-grid{
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
+  }
+
+  .feature-card{
+    border-left:1px solid var(--line);
+    border-top:none;
+    padding:2rem 1.8rem;
+  }
+
+  .feature-card:first-child{
+    border-left:none;
+  }
+
+  .about{
+    padding:8rem 0;
+  }
+
+  .services{
+    padding:8rem 0;
+  }
+
+  .services-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+  }
+
+  .service-card{
+    padding:2.6rem 2.2rem;
+  }
+
+  .cta-banner{
+    padding:5rem 0;
+  }
+
+  .footer{
+    padding-top:6rem;
+  }
+
+  .footer-grid{
+    grid-template-columns:1.3fr 0.9fr 0.9fr 0.9fr;
+    gap:3rem;
+    padding-bottom:4rem;
+  }
+
+  .footer-brand p{
+    max-width:340px;
+  }
+
+  .footer-bottom{
+    padding:1.8rem 0 2.4rem;
+  }
+}

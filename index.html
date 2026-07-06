@@ -1,254 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZEMBUDUMA CONSTRUCTION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZeMbuduma Construction | Constructing Tomorrow, Today</title>
 
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/darkThemeVariables.css">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;500;600&display=swap" rel="stylesheet">
 
+<!-- CSS -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/typography.css">
+<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/features.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/services.css">
+<link rel="stylesheet" href="css/cta.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-  <div class="topbar">
-    <div class="wrap">
-      <div class="pill">Emergency Call: <strong>067 721 9214</strong></div>
-      <a class="pill" href="#contact">Get a quote</a>
-    </div>
-  </div>
 
-  <header>
-    <div class="wrap nav-inner">
-      <a class="brand" href="#home" aria-label="Zembuduma Construction home">
-        <div class="logo">ZC</div>
-        <div>ZEMBUDUMA CONSTRUCTION</div>
+<div class="topbar">
+  <div class="wrap">
+    <div class="contacts">
+
+      <div class="contact-dropdown">
+        <button type="button" class="contact-trigger" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+            <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+          734 Park Str, Pretoria, Gauteng, 0007
+        </button>
+        <div class="contact-menu">
+          <a href="https://www.google.com/maps/search/?api=1&query=734+Park+Street+Pretoria+0007" target="_blank" rel="noopener">Google Maps</a>
+          <a href="https://waze.com/ul?q=734+Park+Street+Pretoria+0007" target="_blank" rel="noopener">Waze</a>
+          <a href="https://m.uber.com/ul/?action=setPickup&dropoff[formatted_address]=734+Park+Street+Pretoria+0007" target="_blank" rel="noopener">Uber</a>
+          <a href="https://bolt.eu/en-za/cities/pretoria/" target="_blank" rel="noopener">Bolt</a>
+        </div>
+      </div>
+
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@zembuduma.co.za" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+          <path d="M3 5h18v14H3z"/>
+          <path d="M3 5l9 8 9-8"/>
+        </svg>
+        info@zembuduma.co.za
       </a>
 
-      <button class="menu-btn" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+      <a href="tel:+27677219214">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+          <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.4 2.1L8 10.2a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c1 .4 2 .6 3 .7a2 2 0 0 1 1.7 2z"/>
+        </svg>
+        +27 (67) 721-9214
+      </a>
 
-      <nav>
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    </div>
+    <div class="hours">Mon &ndash; Fri &nbsp;9:00 &ndash; 16:00</div>
+  </div>
+</div>
 
-      <div class="nav-actions">
-        <a class="cta" href="#contact">Get a quote</a>
+<header>
+  <div class="wrap">
+    <a href="#" class="logo">
+      <img src="./images/logo.webp" alt="ZeMbuduma Construction logo">
+
+      <div class="logo-text">
+        <span class="name">ZeMbuduma</span>
+        <span class="sub">Construction</span>
+      </div>
+    </a>
+    
+    <nav class="mainnav">
+      <a class="navlink" href="#about">About</a>
+      <a class="navlink" href="#services">Services</a>
+      <a class="navlink" href="#contact">Contact</a>
+      <a class="btn solid" href="./qoute.html">Get A Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Pretoria &middot; Gauteng &middot; Est. South Africa</span>
+        <h1>Constructing<br>Tomorrow, <em>Today.</em></h1>
+        <p class="lead">A Pretoria-based construction partner delivering building, infrastructure, and office supply solutions with precision, safety, and craft &mdash; built to be trusted for decades, not just a single project.</p>
+        <div class="hero-cta-row">
+          <a href="./qoute.html" class="btn solid">Get A Free Quote</a>
+          <a href="#services" class="btn">Our Services</a>
+        </div>
+        <div class="sheet-tag">
+          <span><b>Dwg. No. 01</b> &mdash; Site Overview</span>
+          <span>B-BBEE Level 1</span>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <svg viewBox="0 0 420 500" fill="none" stroke="#1b1a17" stroke-width="1.3">
+          <rect x="60" y="120" width="140" height="330" />
+          <rect x="200" y="60" width="160" height="390" />
+          <line x1="60" y1="120" x2="60" y2="450" stroke-dasharray="2 4" opacity="0.4"/>
+          <line x1="90" y1="170" x2="90" y2="200" />
+          <line x1="90" y1="230" x2="90" y2="260" />
+          <line x1="90" y1="290" x2="90" y2="320" />
+          <line x1="90" y1="350" x2="90" y2="380" />
+          <line x1="130" y1="170" x2="130" y2="200" />
+          <line x1="130" y1="230" x2="130" y2="260" />
+          <line x1="130" y1="290" x2="130" y2="320" />
+          <line x1="130" y1="350" x2="130" y2="380" />
+          <line x1="170" y1="170" x2="170" y2="200" />
+          <line x1="170" y1="230" x2="170" y2="260" />
+          <line x1="170" y1="290" x2="170" y2="320" />
+          <line x1="170" y1="350" x2="170" y2="380" />
+          <line x1="230" y1="100" x2="230" y2="130" />
+          <line x1="230" y1="160" x2="230" y2="190" />
+          <line x1="230" y1="220" x2="230" y2="250" />
+          <line x1="230" y1="280" x2="230" y2="310" />
+          <line x1="230" y1="340" x2="230" y2="370" />
+          <line x1="270" y1="100" x2="270" y2="130" />
+          <line x1="270" y1="160" x2="270" y2="190" />
+          <line x1="270" y1="220" x2="270" y2="250" />
+          <line x1="270" y1="280" x2="270" y2="310" />
+          <line x1="270" y1="340" x2="270" y2="370" />
+          <line x1="310" y1="100" x2="310" y2="130" />
+          <line x1="310" y1="160" x2="310" y2="190" />
+          <line x1="310" y1="220" x2="310" y2="250" />
+          <line x1="310" y1="280" x2="310" y2="310" />
+          <line x1="310" y1="340" x2="310" y2="370" />
+          <path d="M60 120 L130 60 L360 60" stroke="#a97d3f" stroke-width="1.6"/>
+          <line x1="45" y1="450" x2="380" y2="450" stroke="#a97d3f" stroke-width="1.2"/>
+          <line x1="45" y1="440" x2="45" y2="460" stroke="#a97d3f" stroke-width="1.2"/>
+          <line x1="380" y1="440" x2="380" y2="460" stroke="#a97d3f" stroke-width="1.2"/>
+          <text x="180" y="480" font-family="Archivo" font-size="11" fill="#a97d3f" letter-spacing="1">7500 mm</text>
+        </svg>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main id="home">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow">Pretoria-based construction company</div>
-          <h1>Build strong foundations.</h1>
-          <p class="lead">Reliable construction services with integrity, quality, and professionalism. This recreation follows the visible structure of the Zembuduma site: a simple business landing page, strong call-to-action, services, company info, news, and contact section.</p>
-          <div class="hero-actions">
-            <a class="cta" href="#services">Explore services</a>
-            <a class="cta secondary" href="#contact">Contact us</a>
-          </div>
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="wrap">
+      <div class="feature-grid">
+        <div class="feature-card reveal">
+          <span class="tag">A&ndash;01</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          <h3>Quality Workmanship</h3>
+          <p>Delivering reliable, professional results on every project we take on.</p>
         </div>
-
-        <div class="hero-card hero-visual" aria-label="Construction themed visual">
-          <div class="hero-panel">
-            <div class="badge">Emergency Call</div>
-            <h3 style="margin-top:12px;">067 721 9214</h3>
-            <p>Based in Pretoria, Gauteng, serving clients across South Africa.</p>
-            <div class="info-row">
-              <div class="info"><span>Website</span><strong>zembuduma.co.za</strong></div>
-              <div class="info"><span>Address</span><strong>734 Park St, Pretoria</strong></div>
-              <div class="info"><span>Email</span><strong>info@zembuduma.co.za</strong></div>
-            </div>
-          </div>
+        <div class="feature-card reveal">
+          <span class="tag">A&ndash;02</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <h3>Reliable &amp; Timely</h3>
+          <p>Meeting deadlines and delivering quality results on schedule, every time.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="wrap section-grid">
-        <div class="section-title">
-          <div>
-            <div class="eyebrow">Our services</div>
-            <h2>Multi-service construction support</h2>
-          </div>
-          <p>Four blocks echo the service-card format used on the site. The exact site content is sparse, so this version keeps it broad and practical.</p>
+        <div class="feature-card reveal">
+          <span class="tag">A&ndash;03</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 21v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6"/><path d="M9 21v-4h6v4"/><path d="M4 11l8-7 8 7"/></svg>
+          <h3>Customer-Focused</h3>
+          <p>Client satisfaction through clear communication and dependable service.</p>
         </div>
-
-        <div class="services">
-          <div class="cards-4">
-            <article class="card service-card">
-              <div class="badge">Construction</div>
-              <h3>Building works</h3>
-              <p>General construction for residential, commercial, and infrastructure projects.</p>
-            </article>
-            <article class="card service-card">
-              <div class="badge">Mining</div>
-              <h3>Open cast mining</h3>
-              <p>Mine support services aligned with the company’s expanding footprint.</p>
-            </article>
-            <article class="card service-card">
-              <div class="badge">Logistics</div>
-              <h3>Project logistics</h3>
-              <p>Support for site movement, supply handling, and coordination.</p>
-            </article>
-            <article class="card service-card">
-              <div class="badge">Support</div>
-              <h3>General enquiries</h3>
-              <p>Quotations, partnerships, tenders, and business support.</p>
-            </article>
-          </div>
+        <div class="feature-card reveal">
+          <span class="tag">A&ndash;04</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="8" cy="9" r="3"/><circle cx="17" cy="9" r="3"/><path d="M2 20c0-3 2.7-5 6-5s6 2 6 5"/><path d="M11 20c0-3 2.7-5 6-5s6 2 6 5"/></svg>
+          <h3>Empowering Communities</h3>
+          <p>Creating local opportunity and economic growth as a B-BBEE Level 1 company.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="wrap about-grid">
-        <div class="section-title">
-          <div>
-            <div class="eyebrow">About us</div>
-            <h2>Practical, simple, business-first layout</h2>
-          </div>
-          <p>This section reflects the company messaging found on the live pages: professionalism, quality, and nationwide service.</p>
-        </div>
-
-        <div class="about-copy card">
-          <div class="about-box">
-            <h3>Our vision</h3>
-            <p>To become one of South Africa’s trusted construction and multi-service companies, creating employment opportunities and delivering quality services nationwide.</p>
-          </div>
-          <div class="about-box">
-            <h3>Our mission</h3>
-            <p>To build strong foundations for the future by delivering reliable construction services with integrity, quality, and professionalism.</p>
-          </div>
-        </div>
-
-        <div class="about-side card">
-          <div class="mini-list">
-            <div class="mini-item"><div class="icon">📍</div><div><strong>Address</strong><span>734 Park St, Pretoria, Gauteng, 0007, South Africa</span></div></div>
-            <div class="mini-item"><div class="icon">📞</div><div><strong>Phone</strong><span>+27 67 721 9214</span></div></div>
-            <div class="mini-item"><div class="icon">✉️</div><div><strong>Email</strong><span>info@zembuduma.co.za</span></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="news">
-      <div class="wrap">
-        <div class="section-title">
-          <div>
-            <div class="eyebrow">Our news</div>
-            <h2>Latest updates</h2>
-          </div>
-          <p>Two article cards match the visible “Our News” section and its straightforward, informational style.</p>
-        </div>
-
-        <div class="news-grid">
-          <article class="card news-card">
-            <div class="news-thumb"></div>
-            <small>Article 1</small>
-            <h3>Introducing ZeMbuduma Construction</h3>
-            <p>Pretoria-based company built on ambition, professionalism, and a commitment to delivering quality work across the construction industry.</p>
-            <a class="cta secondary" href="#contact">Read more</a>
-          </article>
-          <article class="card news-card">
-            <div class="news-thumb"></div>
-            <small>Article 2</small>
-            <h3>Expanding into open cast mining</h3>
-            <p>The business is broadening its capabilities to take on new opportunities in mining and resource-sector support.</p>
-            <a class="cta secondary" href="#contact">Read more</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="wrap contact-grid">
-        <div class="section-title">
-          <div>
-            <div class="eyebrow">Contact us</div>
-            <h2>Send an enquiry</h2>
-          </div>
-          <p>The live site has a simple contact form; this version keeps the same intent and layout.</p>
-        </div>
-
-        <div class="contact-form card">
-          <form>
-            <div class="form-row">
-              <input type="text" placeholder="First Name" />
-              <input type="text" placeholder="Last Name" />
-            </div>
-            <div class="form-row">
-              <input type="email" placeholder="Email" />
-              <input type="tel" placeholder="Phone Number" />
-            </div>
-            <select>
-              <option>Select Subject</option>
-              <option>General Inquiry</option>
-              <option>Request a Quote</option>
-              <option>Tender / Business Partnership</option>
-              <option>Career Opportunities</option>
-              <option>Other</option>
-            </select>
-            <textarea placeholder="Message"></textarea>
-            <label style="display:flex; gap:10px; align-items:flex-start; color:var(--muted); line-height:1.6;">
-              <input type="checkbox" style="width:auto; margin-top:4px;" />
-              I consent to have this website store my submitted information so they can respond to my inquiry.
-            </label>
-            <button class="cta" type="button">Submit</button>
-          </form>
-        </div>
-
-        <aside class="contact-detail card">
-          <div class="mini-list">
-            <div class="mini-item"><div class="icon">☎️</div><div><strong>Call Us</strong><span>(+27)67 721 9214</span></div></div>
-            <div class="mini-item"><div class="icon">🌐</div><div><strong>Website</strong><span>www.zembuduma.co.za</span></div></div>
-            <div class="mini-item"><div class="icon">📍</div><div><strong>Address</strong><span>734 Park St, Pretoria, Gauteng, 0007, South Africa</span></div></div>
-            <div class="mini-item"><div class="icon">✉️</div><div><strong>Email</strong><span>info@zembuduma.co.za</span></div></div>
-          </div>
-        </aside>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap footer-grid">
-      <div class="footer-brand">
-        <div class="brand" style="margin-bottom: 10px;"><div class="logo">ZC</div><div>ZEMBUDUMA CONSTRUCTION</div></div>
-        <p>Our mission is to build strong foundations for the future by delivering reliable construction services with integrity, quality, and professionalism.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Our Services</h4>
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#news">Open Cast Mining</a>
-      </div>
-      <div class="footer-col">
-        <h4>Help</h4>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact Us</a>
-        <a href="#news">Jobs</a>
-        <a href="#services">Services</a>
-      </div>
-      <div class="footer-col">
-        <h4>Important Links</h4>
-        <a href="#">Privacy Policy</a>
-        <a href="#news">Our News</a>
-        <a href="#news">Jobs</a>
-        <a href="#contact">Contact Us</a>
       </div>
     </div>
-    <div class="wrap bottom">
-      <div>© 2026 ZeMbuduma Construction. All Rights Reserved.</div>
-      <div>Powered by Cloudflare</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="about-copy reveal">
+        <span class="eyebrow">About ZeMbuduma</span>
+        <h2>Built on reliability,<br>safety, and craft.</h2>
+        <p class="lead">ZeMbuduma Construction is a Pretoria-based company delivering high-quality building, infrastructure, and office supply solutions across South Africa &mdash; grounded in strong project execution and lasting client relationships.</p>
+        <p class="founder-line">&ldquo;Don&rsquo;t just choose a company &mdash; choose a partner you can rely on.&rdquo;<br><span style="font-style:normal; font-size:0.85rem; color:var(--text-muted); font-family:var(--font-body);">&mdash; Malibongwe Mabena, Founder &amp; Director</span></p>
+        <div class="badges">
+          <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2l3 6 6 1-4.5 4 1 6-5.5-3-5.5 3 1-6L4 9l6-1z"/></svg>B-BBEE Level 1</div>
+          <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="8" r="3.5"/><path d="M5 21c0-4 3.2-6.5 7-6.5s7 2.5 7 6.5"/></svg>Empowering Youth</div>
+          <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2l8 3.5v5c0 5-3.4 8.7-8 10.5C7.4 19.2 4 15.5 4 10.5v-5z"/></svg>Safety &amp; Compliance</div>
+          <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9h18M9 4v16"/></svg>Multi-Service Solutions</div>
+        </div>
+        <a href="#services" class="btn brass">Learn More</a>
+      </div>
+      <div class="about-art reveal">
+        <span class="corner-label"><b>Dwg. No. 02</b> &mdash; Elevation</span>
+        <svg viewBox="0 0 200 240" fill="none" stroke="#e9e4d9" stroke-width="1">
+          <rect x="20" y="40" width="160" height="180"/>
+          <line x1="20" y1="80" x2="180" y2="80"/>
+          <line x1="20" y1="120" x2="180" y2="120"/>
+          <line x1="20" y1="160" x2="180" y2="160"/>
+          <rect x="40" y="55" width="20" height="20"/>
+          <rect x="90" y="55" width="20" height="20"/>
+          <rect x="140" y="55" width="20" height="20"/>
+          <rect x="40" y="95" width="20" height="20"/>
+          <rect x="90" y="95" width="20" height="20"/>
+          <rect x="140" y="95" width="20" height="20"/>
+          <rect x="40" y="135" width="20" height="20"/>
+          <rect x="90" y="135" width="20" height="20"/>
+          <rect x="140" y="135" width="20" height="20"/>
+          <rect x="80" y="180" width="40" height="40" stroke="#a97d3f"/>
+          <path d="M20 40l70-25 90 25" stroke="#a97d3f"/>
+        </svg>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <span class="eyebrow">Featured Services</span>
+      <h2>Six disciplines,<br>one standard of craft.</h2>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <span class="num">01</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+          <h3>Construction &amp; General Building</h3>
+          <p>Professional building solutions for residential, commercial, and infrastructure projects.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="num">02</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+          <h3>Project Management &amp; Consulting</h3>
+          <p>Planning, coordination, and supervision that ensures successful delivery start to finish.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="num">03</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M14 3l7 7-8.5 8.5a3 3 0 0 1-4.24 0l-2.76-2.76a3 3 0 0 1 0-4.24z"/><path d="M2 22l4-4"/></svg>
+          <h3>Renovations &amp; Maintenance</h3>
+          <p>Upgrading and maintaining residential, commercial, and industrial properties.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="num">04</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M2 20l6-14 6 14M4 15h8M14 20l6-10 4 10"/></svg>
+          <h3>Open Cast Mining</h3>
+          <p>Efficient extraction, site operations, and sustainable mining practices.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="num">05</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h4"/></svg>
+          <h3>Office Supply Solutions</h3>
+          <p>Laptops, printers, stationery, and workplace equipment for every office.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="num">06</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M3 18c4-10 14-10 18 0"/><path d="M7 18h10M9 14h6"/></svg>
+          <h3>Road Construction &amp; Maintenance</h3>
+          <p>Roadworks, paving, and infrastructure support for public and private sectors.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <video class="cta-bg-video" src="./videos/construction-timelapse.mov" autoplay muted loop playsinline></video>
+    <div class="cta-overlay"></div>
+    <div class="wrap">
+      <h2>Let's build something that lasts.</h2>
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=info@zembuduma.co.za&su=Request%20for%20a%20Construction%20Consultation"
+        target="_blank"
+        rel="noopener"
+        class="btn">
+        Request A Consultation
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer lives in its own file (footer.html) and is loaded in here -->
+<div id="footer-slot"></div>
+
+<script src="./js/script.js"></script>
+
 </body>
 </html>
