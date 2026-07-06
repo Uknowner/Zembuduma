@@ -12,3 +12,26 @@
   --font-display: 'Fraunces', serif;
   --font-body: 'Archivo', sans-serif;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  /* Backgrounds (Deep, warm off-blacks) */
+  --bg-main: #12110e;          /* Crushed obsidian (deep canvas background) */
+  --bg-surface: #1b1a17;       /* Your original --charcoal (perfect for cards/sections) */
+  --bg-elevated: #26251f;      /* Your original --charcoal-soft (for nested elements/inputs) */
+
+  /* Typography (Soft, warm whites to avoid harsh eye strain) */
+  --text-main: #f4f1e9;        /* Your original --paper (crisp, elegant headers) */
+  --text-secondary: #e9e4d9;   /* Your original --concrete (highly readable body text) */
+  --text-muted: #a6a093;       /* Balanced mid-tone for captions and metadata */
+
+  /* UI Accents (Slightly boosted in brightness so they don't look muddy on dark) */
+  --brass-dark: #c29553;       /* Luminous brass for links, icons, and primary actions */
+  --rust-dark: #a35d45;        /* Warm rust for warnings, hover states, or secondary accents */
+  --steel-dark: #8ba0aa;       /* Softened slate-blue for secondary icons or subtle graphics */
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(244, 241, 233, 0.08); /* Faint warm line */
+  --border-strong: rgba(244, 241, 233, 0.18); /* Defined line for active elements */
+}
+}

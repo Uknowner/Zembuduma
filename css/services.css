@@ -1,60 +1,121 @@
 .services{
-  background:var(--charcoal);
-  color:var(--paper);
-  padding:5rem 0;
+background:var(--charcoal);
+color:var(--paper);
+padding:5rem 0;
+}
+
+@media (prefers-color-scheme: dark){
+.services{
+background:var(--bg-main);
+color:var(--text-main);
+}
 }
 
 .services .eyebrow{
-  color:var(--brass);
+color:var(--brass);
+}
+
+@media (prefers-color-scheme: dark){
+.services .eyebrow{
+color:var(--brass-dark);
+}
 }
 
 .services h2{
-  color:var(--paper);
-  max-width:640px;
+color:var(--paper);
+max-width:640px;
+}
+
+@media (prefers-color-scheme: dark){
+.services h2{
+color:var(--text-main);
+}
 }
 
 .services-grid{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:1px;
-  margin-top:3rem;
-  background:rgba(244,241,233,0.14);
+display:grid;
+grid-template-columns:1fr;
+gap:1px;
+margin-top:3rem;
+background:rgba(244,241,233,0.14);
+}
+
+@media (prefers-color-scheme: dark){
+.services-grid{
+background:var(--border-subtle);
+}
 }
 
 .service-card{
-  background:var(--charcoal);
-  padding:2.2rem 1.6rem;
-  transition:background 0.35s ease;
+background:var(--charcoal);
+padding:2.2rem 1.6rem;
+transition:background .35s ease;
+}
+
+@media (prefers-color-scheme: dark){
+.service-card{
+background:var(--bg-surface);
+}
 }
 
 .service-card:hover{
-  background:var(--charcoal-soft);
+background:var(--charcoal-soft);
+}
+
+@media (prefers-color-scheme: dark){
+.service-card:hover{
+background:var(--bg-elevated);
+}
 }
 
 .service-card .num{
-  font-family:var(--font-display);
-  font-style:italic;
-  font-size:0.9rem;
-  color:var(--brass);
-  margin-bottom:1.4rem;
-  display:block;
+font-family:var(--font-display);
+font-style:italic;
+font-size:.9rem;
+color:var(--brass);
+margin-bottom:1.4rem;
+display:block;
+}
+
+@media (prefers-color-scheme: dark){
+.service-card .num{
+color:var(--brass-dark);
+}
 }
 
 .service-card svg{
-  width:30px;
-  height:30px;
-  stroke:var(--concrete-dark);
-  margin-bottom:1.4rem;
+width:30px;
+height:30px;
+stroke:var(--concrete-dark);
+margin-bottom:1.4rem;
+}
+
+@media (prefers-color-scheme: dark){
+.service-card svg{
+stroke:var(--steel-dark);
+}
 }
 
 .service-card h3{
-  color:var(--paper);
-  font-size:1.2rem;
-  margin-bottom:0.7rem;
+color:var(--paper);
+font-size:1.2rem;
+margin-bottom:.7rem;
+}
+
+@media (prefers-color-scheme: dark){
+.service-card h3{
+color:var(--text-main);
+}
 }
 
 .service-card p{
-  color:var(--concrete-dark);
-  font-size:0.92rem;
-  opacity:0.85;
+color:var(--concrete-dark);
+font-size:.92rem;
+opacity:.85;
+}
+
+@media (prefers-color-scheme: dark){
+.service-card p{
+color:var(--text-secondary);
+}
 }

@@ -8,7 +8,8 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;500;600&display=swap">
+<link rel="icon" href="favicon.webp">
 
 <!-- CSS -->
 <link rel="stylesheet" href="css/variables.css">
@@ -98,7 +99,7 @@
         <p class="lead">A Pretoria-based construction partner delivering building, infrastructure, and office supply solutions with precision, safety, and craft &mdash; built to be trusted for decades, not just a single project.</p>
         <div class="hero-cta-row">
           <a href="./qoute.html" class="btn solid">Get A Free Quote</a>
-          <a href="#services" class="btn">Our Services</a>
+          <a href="#services" class="btn solid">Our Services</a>
         </div>
         <div class="sheet-tag">
           <span><b>Dwg. No. 01</b> &mdash; Site Overview</span>
@@ -107,41 +108,79 @@
       </div>
       <div class="hero-art reveal">
         <svg viewBox="0 0 420 500" fill="none" stroke="#1b1a17" stroke-width="1.3">
-          <rect x="60" y="120" width="140" height="330" />
-          <rect x="200" y="60" width="160" height="390" />
-          <line x1="60" y1="120" x2="60" y2="450" stroke-dasharray="2 4" opacity="0.4"/>
-          <line x1="90" y1="170" x2="90" y2="200" />
-          <line x1="90" y1="230" x2="90" y2="260" />
-          <line x1="90" y1="290" x2="90" y2="320" />
-          <line x1="90" y1="350" x2="90" y2="380" />
-          <line x1="130" y1="170" x2="130" y2="200" />
-          <line x1="130" y1="230" x2="130" y2="260" />
-          <line x1="130" y1="290" x2="130" y2="320" />
-          <line x1="130" y1="350" x2="130" y2="380" />
-          <line x1="170" y1="170" x2="170" y2="200" />
-          <line x1="170" y1="230" x2="170" y2="260" />
-          <line x1="170" y1="290" x2="170" y2="320" />
-          <line x1="170" y1="350" x2="170" y2="380" />
-          <line x1="230" y1="100" x2="230" y2="130" />
-          <line x1="230" y1="160" x2="230" y2="190" />
-          <line x1="230" y1="220" x2="230" y2="250" />
-          <line x1="230" y1="280" x2="230" y2="310" />
-          <line x1="230" y1="340" x2="230" y2="370" />
-          <line x1="270" y1="100" x2="270" y2="130" />
-          <line x1="270" y1="160" x2="270" y2="190" />
-          <line x1="270" y1="220" x2="270" y2="250" />
-          <line x1="270" y1="280" x2="270" y2="310" />
-          <line x1="270" y1="340" x2="270" y2="370" />
-          <line x1="310" y1="100" x2="310" y2="130" />
-          <line x1="310" y1="160" x2="310" y2="190" />
-          <line x1="310" y1="220" x2="310" y2="250" />
-          <line x1="310" y1="280" x2="310" y2="310" />
-          <line x1="310" y1="340" x2="310" y2="370" />
-          <path d="M60 120 L130 60 L360 60" stroke="#a97d3f" stroke-width="1.6"/>
-          <line x1="45" y1="450" x2="380" y2="450" stroke="#a97d3f" stroke-width="1.2"/>
-          <line x1="45" y1="440" x2="45" y2="460" stroke="#a97d3f" stroke-width="1.2"/>
-          <line x1="380" y1="440" x2="380" y2="460" stroke="#a97d3f" stroke-width="1.2"/>
-          <text x="180" y="480" font-family="Archivo" font-size="11" fill="#a97d3f" letter-spacing="1">7500 mm</text>
+          <defs>
+            <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M20 0H0V20" stroke="#1b1a17" stroke-opacity=".05"/>
+            </pattern>
+          </defs>
+          <!-- Blueprint Grid -->
+          <rect width="420" height="500" fill="url(#grid)"/>
+          <!-- Drawing Label -->
+          <text x="28" y="35" fill="#a97d3f" font-size="10" font-family="Archivo" letter-spacing="2"> DWG. 01 • FRONT ELEVATION </text>
+          <!-- Buildings -->
+          <rect x="60" y="120" width="140" height="330"/>
+          <rect x="200" y="60" width="160" height="390"/>
+          <!-- Roof -->
+          <path d="M60 120 L130 60 L360 60" stroke="#a97d3f" stroke-width="1.8"/>
+          <!-- Floor Guides -->
+          <line x1="60" y1="180" x2="360" y2="180" opacity=".18"/>
+          <line x1="60" y1="240" x2="360" y2="240" opacity=".18"/>
+          <line x1="60" y1="300" x2="360" y2="300" opacity=".18"/>
+          <line x1="60" y1="360" x2="360" y2="360" opacity=".18"/>
+          <!-- Windows Left -->
+          <g>
+            <rect x="78" y="155" width="24" height="32"/>
+            <rect x="118" y="155" width="24" height="32"/>
+            <rect x="158" y="155" width="24" height="32"/>
+            <rect x="78" y="215" width="24" height="32"/>
+            <rect x="118" y="215" width="24" height="32"/>
+            <rect x="158" y="215" width="24" height="32"/>
+            <rect x="78" y="275" width="24" height="32"/>
+            <rect x="118" y="275" width="24" height="32"/>
+            <rect x="158" y="275" width="24" height="32"/>
+            <rect x="78" y="335" width="24" height="32"/>
+            <rect x="118" y="335" width="24" height="32"/>
+            <rect x="158" y="335" width="24" height="32"/>
+          </g>
+          <!-- Windows Right -->
+          <g>
+            <rect x="220" y="95" width="24" height="32"/>
+            <rect x="260" y="95" width="24" height="32"/>
+            <rect x="300" y="95" width="24" height="32"/>
+            <rect x="220" y="155" width="24" height="32"/>
+            <rect x="260" y="155" width="24" height="32"/>
+            <rect x="300" y="155" width="24" height="32"/>
+            <rect x="220" y="215" width="24" height="32"/>
+            <rect x="260" y="215" width="24" height="32"/>
+            <rect x="300" y="215" width="24" height="32"/>
+            <rect x="220" y="275" width="24" height="32"/>
+            <rect x="260" y="275" width="24" height="32"/>
+            <rect x="300" y="275" width="24" height="32"/>
+            <rect x="220" y="335" width="24" height="32"/>
+            <rect x="260" y="335" width="24" height="32"/>
+            <rect x="300" y="335" width="24" height="32"/>
+          </g>
+          <!-- Entrance (centered on left building: x=60 w=140 → center=130, door w=52 → x=104) -->
+          <rect x="104" y="395" width="52" height="55" stroke="#a97d3f" stroke-width="1.8"/>
+          <!-- Dimension Line -->
+          <line x1="45" y1="470" x2="380" y2="470" stroke="#a97d3f"/>
+          <line x1="45" y1="460" x2="45" y2="480" stroke="#a97d3f"/>
+          <line x1="380" y1="460" x2="380" y2="480" stroke="#a97d3f"/>
+          <!-- Arrowheads -->
+          <path d="M55 470 L65 466 L65 474Z" fill="#a97d3f"/>
+          <path d="M370 470 L360 466 L360 474Z" fill="#a97d3f"/>
+          <text x="170" y="492" fill="#a97d3f" font-family="Archivo" font-size="11" letter-spacing="1"> 7500 mm </text>
+          <!-- Title Block -->
+          <rect x="270" y="395" width="110" height="58"/>
+          <line x1="270" y1="414" x2="380" y2="414"/>
+          <line x1="330" y1="395" x2="330" y2="453"/>
+          <text x="276" y="408" font-size="7" fill="#1b1a17">PROJECT</text>
+          <text x="276" y="425" font-size="7" fill="#1b1a17">ZeMbuduma</text>
+          <text x="336" y="408" font-size="7" fill="#1b1a17">SCALE</text>
+          <text x="336" y="425" font-size="7" fill="#1b1a17">1:200</text>
+          <text x="276" y="444" font-size="7" fill="#1b1a17">ELEVATION</text>
+        </svg>
+      </div>
         </svg>
       </div>
     </div>
@@ -151,30 +190,61 @@
   <section class="features">
     <div class="wrap">
       <div class="feature-grid">
+        
+        <!-- Card 1 -->
         <div class="feature-card reveal">
-          <span class="tag">A&ndash;01</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
-          <h3>Quality Workmanship</h3>
-          <p>Delivering reliable, professional results on every project we take on.</p>
+          <!-- The image that will rise -->
+          <div class="feature-img">
+            <img src="images/image-1.jpg" alt="Quality Workmanship">
+          </div>
+          <!-- Wrap the text so we can keep it above the image -->
+          <div class="feature-content">
+            <span class="tag">A&ndash;01</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+            <h3>Quality Workmanship</h3>
+            <p>Delivering reliable, professional results on every project we take on.</p>
+          </div>
         </div>
+
+        <!-- Card 2 -->
         <div class="feature-card reveal">
-          <span class="tag">A&ndash;02</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
-          <h3>Reliable &amp; Timely</h3>
-          <p>Meeting deadlines and delivering quality results on schedule, every time.</p>
+          <div class="feature-img">
+            <img src="images/image-2.jpg" alt="Reliable & Timely">
+          </div>
+          <div class="feature-content">
+            <span class="tag">A&ndash;02</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+            <h3>Reliable &amp; Timely</h3>
+            <p>Meeting deadlines and delivering quality results on schedule, every time.</p>
+          </div>
         </div>
+
+        <!-- Card 3 -->
         <div class="feature-card reveal">
-          <span class="tag">A&ndash;03</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 21v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6"/><path d="M9 21v-4h6v4"/><path d="M4 11l8-7 8 7"/></svg>
-          <h3>Customer-Focused</h3>
-          <p>Client satisfaction through clear communication and dependable service.</p>
+          <div class="feature-img">
+            <img src="images/image-3.jpg" alt="Customer-Focused">
+          </div>
+          <div class="feature-content">
+            <span class="tag">A&ndash;03</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 21v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6"/><path d="M9 21v-4h6v4"/><path d="M4 11l8-7 8 7"/></svg>
+            <h3>Customer-Focused</h3>
+            <p>Client satisfaction through clear communication and dependable service.</p>
+          </div>
         </div>
+
+        <!-- Card 4 -->
         <div class="feature-card reveal">
-          <span class="tag">A&ndash;04</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="8" cy="9" r="3"/><circle cx="17" cy="9" r="3"/><path d="M2 20c0-3 2.7-5 6-5s6 2 6 5"/><path d="M11 20c0-3 2.7-5 6-5s6 2 6 5"/></svg>
-          <h3>Empowering Communities</h3>
-          <p>Creating local opportunity and economic growth as a B-BBEE Level 1 company.</p>
+          <div class="feature-img">
+            <img src="images/image-4.jpg" alt="Empowering Communities">
+          </div>
+          <div class="feature-content">
+            <span class="tag">A&ndash;04</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="8" cy="9" r="3"/><circle cx="17" cy="9" r="3"/><path d="M2 20c0-3 2.7-5 6-5s6 2 6 5"/><path d="M11 20c0-3 2.7-5 6-5s6 2 6 5"/></svg>
+            <h3>Empowering Communities</h3>
+            <p>Creating local opportunity and economic growth as a B-BBEE Level 1 company.</p>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -193,7 +263,6 @@
           <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2l8 3.5v5c0 5-3.4 8.7-8 10.5C7.4 19.2 4 15.5 4 10.5v-5z"/></svg>Safety &amp; Compliance</div>
           <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9h18M9 4v16"/></svg>Multi-Service Solutions</div>
         </div>
-        <a href="#services" class="btn brass">Learn More</a>
       </div>
       <div class="about-art reveal">
         <span class="corner-label"><b>Dwg. No. 02</b> &mdash; Elevation</span>
